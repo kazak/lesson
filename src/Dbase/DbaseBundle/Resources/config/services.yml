@@ -1,0 +1,7 @@
+parameters:
+#    dbase_dbase.example.class: Dbase\DbaseBundle\Example
+
+services:
+#    dbase_dbase.example:
+#        class: %dbase_dbase.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

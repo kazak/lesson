@@ -1,0 +1,24 @@
+dbase_dbase:
+    resource: "@DbaseDbaseBundle/Resources/config/routing.yml"
+    prefix:   /
+
+admin_admin:
+    resource: "@AdminAdminBundle/Resources/config/routing.yml"
+    prefix:   /
+
+lesson_dbase:
+    resource: "@LessonDbaseBundle/Resources/config/routing.yml"
+    prefix:   /
+
+lesson_db:
+    resource: "@LessonDBBundle/Resources/config/routing.yml"
+    prefix:   /
+
+start_store:
+    resource: "@StartStoreBundle/Resources/config/routing.yml"
+    prefix:   /
+
+lesson_start:
+    resource: "@LessonStartBundle/Resources/config/routing.yml"
+    prefix:   /
+

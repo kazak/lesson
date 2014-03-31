@@ -1,0 +1,12 @@
+admin_admin_homepage:
+    pattern:  /admin/news/{page}
+    defaults: { _controller: AdminAdminBundle:News:index, page: 1 }
+        requirements:
+                page:  \d+
+                _method:  GET
+
+admin_admin_homepage:
+    pattern:  /admin/
+    defaults: { _controller: AdminAdminBundle:Default:index }
+        requirements:
+                _method:  GET

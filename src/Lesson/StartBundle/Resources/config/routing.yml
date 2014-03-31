@@ -1,0 +1,13 @@
+lesson_news_epage:
+    pattern:  /news/{page}
+    defaults: { _controller: LessonStartBundle:News:index, page:1 }
+    requirements:
+            page:  \d+
+            _method:  GET
+
+lesson_start_homepage:
+    pattern:  /{language}
+    defaults: { _controller: LessonStartBundle:Default:index, language:en }
+    requirements:
+            culture:  en|ru
+            _method:  GET

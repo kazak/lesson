@@ -1,0 +1,39 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: kazak
+ * Date: 4/1/14
+ * Time: 12:13 AM
+ */
+
+namespace Dbase\DbaseBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * @ORM\Entity
+ * @ORM\Table(name="news")
+ */
+class News {
+    /**
+     * @ORM\Id
+     * @ORM\Column(type="integer")
+     * @ORM\GeneratedValue(strategy="AUTO")
+     */
+    protected $id;
+
+    /**
+     * @ORM\Column(type="string", length=200)
+     */
+    protected $name;
+
+    /**
+     * @ORM\Column(type="datetime", name="posted_at")
+     */
+    protected $date;
+
+    /**
+     * @ORM\Column(type="text")
+     */
+    protected $description;
+} 

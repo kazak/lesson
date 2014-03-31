@@ -1,0 +1,16 @@
+Bundels:
+    1)Admin
+        Controller
+            Default - {авторизация и приветствие}
+            News - {редактирование новостей}
+    2)Dbase - для работы с базой
+        Entity
+            News - новости
+                id
+                date
+                description
+                name
+    3)Lesson
+       Controller
+            Default - {авторизация и приветствие}
+            News - {вывод новостей новостей}
