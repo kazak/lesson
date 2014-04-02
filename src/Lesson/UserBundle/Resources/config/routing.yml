@@ -1,3 +1,1 @@
-lesson_user_homepage:
-    pattern:  /hello/{name}
-    defaults: { _controller: LessonUserBundle:Default:index }
+

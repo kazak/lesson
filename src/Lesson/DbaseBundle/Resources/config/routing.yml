@@ -1,3 +1,1 @@
-dbase_dbase_homepage:
-    pattern:  /hello/{name}
-    defaults: { _controller: LessonDbaseBundle:Default:index }
+
