@@ -1,1 +1,5 @@
+lesson_dbase_news:
+    resource: "@LessonDbaseBundle/Resources/config/routing/news.yml"
+    prefix:   /news
+
 

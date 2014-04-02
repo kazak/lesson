@@ -6,8 +6,8 @@ lesson_news_epage:
             _method:  GET
 
 lesson_start_homepage:
-    pattern:  /{language}
-    defaults: { _controller: LessonStartBundle:Default:index, language:en }
+    pattern:  /{_locale}
+    defaults: { _controller: LessonStartBundle:Default:index, _locale:en }
     requirements:
-            culture:  en|ru
+            _locale:  en|ru|fr|de|es|it|ja|zh|no|tr|pt
             _method:  GET
