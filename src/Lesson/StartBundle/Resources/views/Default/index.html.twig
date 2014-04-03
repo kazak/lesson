@@ -1,2 +1,15 @@
-Hello {{ name }}!
-{% include 'LessonStartBundle:Article:right_menu.html.twig' with {'node': right_menu} %}
+{% extends 'IphpCoreBundle::bootstrap-layout.html.twig' %}
+
+{% block right_block %}
+    <div>
+        <h2>Right menu</h2>
+        <ul>
+            <li>
+                1
+            </li>
+            <li>
+                2
+            </li>
+        </ul>
+    </div>
+{%  endblock %}

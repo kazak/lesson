@@ -6,6 +6,7 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'Sonata\\jQueryBundle\\' => array($vendorDir . '/sonata-project/jquery-bundle'),
     'Sonata\\IntlBundle\\' => array($vendorDir . '/sonata-project/intl-bundle'),
     'Sonata\\DoctrineORMAdminBundle\\' => array($vendorDir . '/sonata-project/doctrine-orm-admin-bundle'),
     'Sonata\\CoreBundle\\' => array($vendorDir . '/sonata-project/core-bundle'),
