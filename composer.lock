@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "9eec76db049abd8889d26d0df00821ac",
+    "hash": "4649d7ba229e13414677c3dad0f8ce05",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -704,17 +704,17 @@
         },
         {
             "name": "friendsofsymfony/user-bundle",
-            "version": "1.3.x-dev",
+            "version": "v1.3.3",
             "target-dir": "FOS/UserBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfSymfony/FOSUserBundle.git",
-                "reference": "334a0ec4e479f2858d55fad3f2db292328e7bb4b"
+                "reference": "0fc044447ca41acc73d424a6a90d1b9f7fa25d7b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSUserBundle/zipball/334a0ec4e479f2858d55fad3f2db292328e7bb4b",
-                "reference": "334a0ec4e479f2858d55fad3f2db292328e7bb4b",
+                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSUserBundle/zipball/0fc044447ca41acc73d424a6a90d1b9f7fa25d7b",
+                "reference": "0fc044447ca41acc73d424a6a90d1b9f7fa25d7b",
                 "shasum": ""
             },
             "require": {
@@ -768,7 +768,7 @@
             "keywords": [
                 "User management"
             ],
-            "time": "2014-03-16 18:17:43"
+            "time": "2013-09-23 08:24:12"
         },
         {
             "name": "incenteev/composer-parameter-handler",
@@ -1884,12 +1884,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sonata-project/SonataAdminBundle.git",
-                "reference": "c801823441aaecb90da9b584fc6d880d16bdda57"
+                "reference": "088cc7922b7c64dd396abe8e886ef8c64852fb46"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sonata-project/SonataAdminBundle/zipball/c801823441aaecb90da9b584fc6d880d16bdda57",
-                "reference": "c801823441aaecb90da9b584fc6d880d16bdda57",
+                "url": "https://api.github.com/repos/sonata-project/SonataAdminBundle/zipball/088cc7922b7c64dd396abe8e886ef8c64852fb46",
+                "reference": "088cc7922b7c64dd396abe8e886ef8c64852fb46",
                 "shasum": ""
             },
             "require": {
@@ -1956,7 +1956,7 @@
                 "bootstrap",
                 "sonata"
             ],
-            "time": "2014-04-04 14:39:36"
+            "time": "2014-04-04 17:19:04"
         },
         {
             "name": "sonata-project/block-bundle",
@@ -1964,12 +1964,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sonata-project/SonataBlockBundle.git",
-                "reference": "fd344458ae702387251d7294196a927856a0c6cb"
+                "reference": "74a0ee0b652690b918610caac28b1321f22a233c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sonata-project/SonataBlockBundle/zipball/fd344458ae702387251d7294196a927856a0c6cb",
-                "reference": "fd344458ae702387251d7294196a927856a0c6cb",
+                "url": "https://api.github.com/repos/sonata-project/SonataBlockBundle/zipball/74a0ee0b652690b918610caac28b1321f22a233c",
+                "reference": "74a0ee0b652690b918610caac28b1321f22a233c",
                 "shasum": ""
             },
             "require": {
@@ -2020,7 +2020,7 @@
                 "block",
                 "sonata"
             ],
-            "time": "2014-03-19 11:43:04"
+            "time": "2014-04-04 16:19:20"
         },
         {
             "name": "sonata-project/cache",
@@ -2527,7 +2527,7 @@
         },
         {
             "name": "sonata-project/user-bundle",
-            "version": "dev-master",
+            "version": "2.2.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sonata-project/SonataUserBundle.git",
@@ -3198,7 +3198,6 @@
         "sonata-project/doctrine-orm-admin-bundle": 20,
         "sonata-project/propel-admin-bundle": 20,
         "sonata-project/block-bundle": 20,
-        "friendsofsymfony/user-bundle": 20,
         "symfony/security-bundle": 20,
         "sonata-project/easy-extends-bundle": 20,
         "sonata-project/user-bundle": 20
