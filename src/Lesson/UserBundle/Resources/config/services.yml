@@ -1,7 +1,0 @@
-parameters:
-#    lesson_user.example.class: Lesson\UserBundle\Example
-
-services:
-#    lesson_user.example:
-#        class: %lesson_user.example.class%
-#        arguments: [@service_id, "plain_value", %parameter%]

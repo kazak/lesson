@@ -1,7 +1,0 @@
-parameters:
-#    lesson_start.example.class: Lesson\StartBundle\Example
-
-services:
-#    lesson_start.example:
-#        class: %lesson_start.example.class%
-#        arguments: [@service_id, "plain_value", %parameter%]
