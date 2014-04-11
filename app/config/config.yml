@@ -4,7 +4,7 @@ imports:
 
 framework:
     #esi:             ~
-    #translator:      { fallback: "%locale%" }
+    translator:      ~
     secret:          "%secret%"
     router:
         resource: "%kernel.root_dir%/config/routing.yml"
@@ -23,7 +23,7 @@ framework:
         handler_id:  ~
     fragments:       ~
     http_method_override: true
-    translator: ~
+
 
 # Twig Configuration
 twig:
@@ -45,6 +45,9 @@ assetic:
 
 # Doctrine Configuration
 doctrine:
+    orm:
+        auto_generate_proxy_classes: "%kernel.debug%"
+        auto_mapping: true
     dbal:
         driver:   "%database_driver%"
         host:     "%database_host%"
@@ -57,9 +60,7 @@ doctrine:
         # e.g. database_path: "%kernel.root_dir%/data/data.db3"
         # path:     "%database_path%"
 
-    orm:
-        auto_generate_proxy_classes: "%kernel.debug%"
-        auto_mapping: true
+
 
 # Swiftmailer Configuration
 swiftmailer:
@@ -69,16 +70,17 @@ swiftmailer:
     password:  "%mailer_password%"
     spool:     { type: memory }
 
-#
-
 security:
     # [...]
     acl:
         connection: default
+
 fos_user:
-    db_driver: orm # other valid values are 'mongodb', 'couchdb' and 'propel'
+    db_driver: orm
     firewall_name: main
-    user_class: Acme\UserBundle\Entity\User
+    class:
+        model:
+            user: Acme\UserBundle\Entity\User
     group:
         group_class: Application\Sonata\UserBundle\Entity\Group
 

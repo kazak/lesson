@@ -25,7 +25,7 @@ class AppKernel extends Kernel
             new Acme\UserBundle\UserBundle(),
             new FOS\UserBundle\FOSUserBundle(),
             new Sonata\EasyExtendsBundle\SonataEasyExtendsBundle(),
-            new Sonata\UserBundle\SonataUserBundle(),
+            new Sonata\UserBundle\SonataUserBundle('FOSUserBundle'),
             new Acme\StartBundle\AcmeStartBundle(),
         );
 
