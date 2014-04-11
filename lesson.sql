@@ -195,7 +195,7 @@ CREATE TABLE `fos_user_group` (
   `roles` longtext COLLATE utf8_unicode_ci NOT NULL COMMENT '(DC2Type:array)',
   PRIMARY KEY (`id`),
   UNIQUE KEY `UNIQ_583D1F3E5E237E06` (`name`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -204,6 +204,7 @@ CREATE TABLE `fos_user_group` (
 
 LOCK TABLES `fos_user_group` WRITE;
 /*!40000 ALTER TABLE `fos_user_group` DISABLE KEYS */;
+INSERT INTO `fos_user_group` VALUES (1,'user','a:1:{i:0;s:9:\"ROLE_USER\";}'),(2,'admin','a:7:{i:0;s:10:\"ROLE_ADMIN\";i:1;s:9:\"ROLE_USER\";i:2;s:17:\"ROLE_SONATA_ADMIN\";i:3;s:16:\"ROLE_SUPER_ADMIN\";i:4;s:22:\"ROLE_ALLOWED_TO_SWITCH\";i:5;s:6:\"SONATA\";i:6;s:32:\"ROLE_SONATA_PAGE_ADMIN_PAGE_EDIT\";}');
 /*!40000 ALTER TABLE `fos_user_group` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -257,7 +258,7 @@ CREATE TABLE `fos_user_user` (
   PRIMARY KEY (`id`),
   UNIQUE KEY `UNIQ_C560D76192FC23A8` (`username_canonical`),
   UNIQUE KEY `UNIQ_C560D761A0D96FBF` (`email_canonical`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -266,6 +267,7 @@ CREATE TABLE `fos_user_user` (
 
 LOCK TABLES `fos_user_user` WRITE;
 /*!40000 ALTER TABLE `fos_user_user` DISABLE KEYS */;
+INSERT INTO `fos_user_user` VALUES (1,'admin','admin','dimon86@ukr.net','dimon86@ukr.net',1,'a0ujrq08i5ck8g8w4w8gsowogsk0kwc','TAKN5jCij5l8fqUdIbHiW3Iu5mRpJULuZPEezX8v0XFhaNhnEpHUh+av5bz0AhaqsLYhyrYyKuIkzm7FoK+VVg==','2014-04-11 15:49:50',0,0,NULL,NULL,NULL,'a:1:{i:0;s:16:\"ROLE_SUPER_ADMIN\";}',0,NULL,'2014-04-11 16:48:54','2014-04-11 16:11:38',NULL,NULL,NULL,NULL,NULL,'u',NULL,NULL,NULL,NULL,NULL,'null',NULL,NULL,'null',NULL,NULL,'null',NULL,NULL),(2,'kazak','kazak','dss@nxc.no','dss@nxc.no',1,'nsnsb8idbpc0o4cccg4s0gw4g84cokk','O62Gy9KdFP/VNqZPUiEEnbfpkjGdVOZwsIrrXi0xu4BC+6Fm0mBX9+22lmaNrGzufXGgTN7my9INJXxzgFZJBQ==',NULL,0,0,NULL,NULL,NULL,'a:6:{i:0;s:10:\"ROLE_ADMIN\";i:1;s:17:\"ROLE_SONATA_ADMIN\";i:2;s:16:\"ROLE_SUPER_ADMIN\";i:3;s:22:\"ROLE_ALLOWED_TO_SWITCH\";i:4;s:6:\"SONATA\";i:5;s:32:\"ROLE_SONATA_PAGE_ADMIN_PAGE_EDIT\";}',0,NULL,'2014-04-11 16:08:55','2014-04-11 16:12:03','1986-09-04 00:00:00','dima','solo',NULL,NULL,'m','uk_UA','Europe/Kiev',NULL,NULL,NULL,'null',NULL,NULL,'null',NULL,NULL,'null',NULL,NULL),(3,'test','test','test@test.test','test@test.test',1,'5dazuc13yt8g8oco80k80008808084c','9gTHWmi/cie11C5jGqgan/UmYnS5j4qduFVKT075Wzh00hXmRT8ZHljdVMmn5O465l1m2q1znCnYljsQUz7aHQ==',NULL,0,0,NULL,NULL,NULL,'a:0:{}',0,NULL,'2014-04-11 16:09:59','2014-04-11 16:09:59',NULL,NULL,NULL,NULL,NULL,'u',NULL,NULL,NULL,NULL,NULL,'null',NULL,NULL,'null',NULL,NULL,'null',NULL,NULL);
 /*!40000 ALTER TABLE `fos_user_user` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -293,6 +295,7 @@ CREATE TABLE `fos_user_user_group` (
 
 LOCK TABLES `fos_user_user_group` WRITE;
 /*!40000 ALTER TABLE `fos_user_user_group` DISABLE KEYS */;
+INSERT INTO `fos_user_user_group` VALUES (1,2),(2,2);
 /*!40000 ALTER TABLE `fos_user_user_group` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -305,4 +308,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2014-04-11 12:04:41
+-- Dump completed on 2014-04-11 17:12:49
