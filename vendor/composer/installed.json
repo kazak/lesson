@@ -2714,12 +2714,12 @@
         "source": {
             "type": "git",
             "url": "https://github.com/sonata-project/SonataBlockBundle.git",
-            "reference": "932c1a1a040d622e586cd5abd42429df4f6ffaf4"
+            "reference": "75e6dc2de4bfdc0ca4fd80c4860e654a14220ac5"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/sonata-project/SonataBlockBundle/zipball/932c1a1a040d622e586cd5abd42429df4f6ffaf4",
-            "reference": "932c1a1a040d622e586cd5abd42429df4f6ffaf4",
+            "url": "https://api.github.com/repos/sonata-project/SonataBlockBundle/zipball/75e6dc2de4bfdc0ca4fd80c4860e654a14220ac5",
+            "reference": "75e6dc2de4bfdc0ca4fd80c4860e654a14220ac5",
             "shasum": ""
         },
         "require": {
@@ -2738,7 +2738,7 @@
             "sonata-project/admin-bundle": "~2.2",
             "sonata-project/cache-bundle": "~2.1"
         },
-        "time": "2014-04-08 14:21:40",
+        "time": "2014-04-14 16:19:08",
         "type": "symfony-bundle",
         "extra": {
             "branch-alias": {
@@ -2780,12 +2780,12 @@
         "source": {
             "type": "git",
             "url": "https://github.com/sonata-project/SonataAdminBundle.git",
-            "reference": "b9994ca93900d05aa12d38f44b886f45e0d0ce2f"
+            "reference": "020e4ff2ba694e15f8970a9878bd507e15044a06"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/sonata-project/SonataAdminBundle/zipball/b9994ca93900d05aa12d38f44b886f45e0d0ce2f",
-            "reference": "b9994ca93900d05aa12d38f44b886f45e0d0ce2f",
+            "url": "https://api.github.com/repos/sonata-project/SonataAdminBundle/zipball/020e4ff2ba694e15f8970a9878bd507e15044a06",
+            "reference": "020e4ff2ba694e15f8970a9878bd507e15044a06",
             "shasum": ""
         },
         "require": {
@@ -2817,7 +2817,7 @@
             "jms/translation-bundle": "Extract message keys from Admins",
             "sonata-project/intl-bundle": "Add localized date and number into the list"
         },
-        "time": "2014-04-11 15:11:14",
+        "time": "2014-04-14 16:35:43",
         "type": "symfony-bundle",
         "extra": {
             "branch-alias": {
@@ -2851,76 +2851,6 @@
             "Admin Generator",
             "admin",
             "bootstrap",
-            "sonata"
-        ]
-    },
-    {
-        "name": "sonata-project/doctrine-orm-admin-bundle",
-        "version": "dev-master",
-        "version_normalized": "9999999-dev",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/sonata-project/SonataDoctrineORMAdminBundle.git",
-            "reference": "a4e376a6d3df55d1f260013c3cecd65efbfaec63"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/sonata-project/SonataDoctrineORMAdminBundle/zipball/a4e376a6d3df55d1f260013c3cecd65efbfaec63",
-            "reference": "a4e376a6d3df55d1f260013c3cecd65efbfaec63",
-            "shasum": ""
-        },
-        "require": {
-            "doctrine/orm": "~2.4",
-            "sonata-project/admin-bundle": "~2.3@dev",
-            "sonata-project/exporter": "~1.3,>=1.3.1",
-            "symfony/console": "~2.3",
-            "symfony/doctrine-bridge": "~2.2",
-            "symfony/form": "~2.3",
-            "symfony/framework-bundle": "~2.2",
-            "symfony/security": "~2.3"
-        },
-        "require-dev": {
-            "simplethings/entity-audit-bundle": "~0.1",
-            "sonata-project/admin-bundle": "~2.3@dev"
-        },
-        "suggest": {
-            "simplethings/entity-audit-bundle": "If you want to support for versioning of entities and their associations."
-        },
-        "time": "2014-04-09 12:07:30",
-        "type": "symfony-bundle",
-        "extra": {
-            "branch-alias": {
-                "dev-master": "2.3.x-dev"
-            }
-        },
-        "installation-source": "source",
-        "autoload": {
-            "psr-4": {
-                "Sonata\\DoctrineORMAdminBundle\\": ""
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Thomas Rabaix",
-                "email": "thomas.rabaix@sonata-project.org",
-                "homepage": "http://sonata-project.org"
-            },
-            {
-                "name": "Sonata Community",
-                "homepage": "https://github.com/sonata-project/SonataDoctrineORMAdminBundle/contributors"
-            }
-        ],
-        "description": "Symfony Sonata / Integrate Doctrine ORM into the SonataAdminBundle",
-        "homepage": "http://sonata-project.org/bundles/admin",
-        "keywords": [
-            "Admin Generator",
-            "admin",
-            "bootstrap",
-            "generator",
             "sonata"
         ]
     },
@@ -3282,6 +3212,76 @@
         "homepage": "http://friendsofsymfony.github.com",
         "keywords": [
             "User management"
+        ]
+    },
+    {
+        "name": "sonata-project/doctrine-orm-admin-bundle",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/sonata-project/SonataDoctrineORMAdminBundle.git",
+            "reference": "6d17594dff7d4379da0c369a2923442b1363b0ef"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/sonata-project/SonataDoctrineORMAdminBundle/zipball/6d17594dff7d4379da0c369a2923442b1363b0ef",
+            "reference": "6d17594dff7d4379da0c369a2923442b1363b0ef",
+            "shasum": ""
+        },
+        "require": {
+            "doctrine/orm": "~2.4",
+            "sonata-project/admin-bundle": "~2.3@dev",
+            "sonata-project/exporter": "~1.3,>=1.3.1",
+            "symfony/console": "~2.3",
+            "symfony/doctrine-bridge": "~2.2",
+            "symfony/form": "~2.3",
+            "symfony/framework-bundle": "~2.2",
+            "symfony/security": "~2.3"
+        },
+        "require-dev": {
+            "simplethings/entity-audit-bundle": "~0.1",
+            "sonata-project/admin-bundle": "~2.3@dev"
+        },
+        "suggest": {
+            "simplethings/entity-audit-bundle": "If you want to support for versioning of entities and their associations."
+        },
+        "time": "2014-04-14 16:20:20",
+        "type": "symfony-bundle",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "2.3.x-dev"
+            }
+        },
+        "installation-source": "source",
+        "autoload": {
+            "psr-4": {
+                "Sonata\\DoctrineORMAdminBundle\\": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Thomas Rabaix",
+                "email": "thomas.rabaix@sonata-project.org",
+                "homepage": "http://sonata-project.org"
+            },
+            {
+                "name": "Sonata Community",
+                "homepage": "https://github.com/sonata-project/SonataDoctrineORMAdminBundle/contributors"
+            }
+        ],
+        "description": "Symfony Sonata / Integrate Doctrine ORM into the SonataAdminBundle",
+        "homepage": "http://sonata-project.org/bundles/admin",
+        "keywords": [
+            "Admin Generator",
+            "admin",
+            "bootstrap",
+            "generator",
+            "sonata"
         ]
     }
 ]
