@@ -4,6 +4,15 @@
          url(../ttf/Chalk.ttf);
 }
 
+.pano {
+    background-color: #000000;
+    box-shadow: 0 2px 16px black;
+    height: 100px;
+    position: absolute;
+    width: 100%;
+    z-index: 0;
+}
+
 #content {
     background: #3c585b;
     border-top: 3px solid rgb(170, 170, 170);
@@ -12,6 +21,7 @@
     border-left: 5px solid rgb(170, 170, 170);
     border-radius: 5px 5px 0 0;
     min-height: 200px;
+    box-shadow: 0 5px 11px black;
 }
 
 h1 {
@@ -48,15 +58,20 @@ h1 {
     height: 150px;
     border: 2px solid;
     margin: 33px 0 10px;
+    z-index: 2;
+    background: white;
+    box-shadow: 0 4px 9px black;
 }
 
 #desc {
     background: url("../img/desc.png") repeat-x scroll 0 0 transparent;
-    bottom: -36px;
-    height: 36px;
+    bottom: -33px;
+    height: 33px;
     margin: 0 -25px;
     position: absolute;
-    width: 102%
+    width: 102%;
+    border-radius: 0 0 17px 17px;
+    box-shadow: 3px 6px 15px black;
 }
 
 #mel {
