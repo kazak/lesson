@@ -33,6 +33,10 @@ h1 {
     float: right;
 }
 
+.top_menu ul {
+    margin: 0;
+}
+
 .top_menu {
     font-family: Chalk, arial;
     background: black;
@@ -70,6 +74,7 @@ h1 {
     z-index: 2;
     background: white;
     box-shadow: 0 4px 9px black;
+    border-radius: 12px;
 }
 
 #desc {
@@ -89,3 +94,20 @@ h1 {
     height: 30px;
 }
 
+.breadcrumbs {
+    background-color: #3c585b;
+    font-family: Chalk, arial;
+    border-color: #000000;
+}
+.breadcrumbs > *{
+    color: #fbed50;
+    font-family: Chalk, arial;
+}
+
+.breadcrumbs > *:before {
+    color: #ffffff;
+}
+
+.breadcrumbs > .unavailable {
+    color: #ffffff;
+}

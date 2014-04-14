@@ -74,6 +74,7 @@ h1 {
     z-index: 2;
     background: white;
     box-shadow: 0 4px 9px black;
+    border-radius: 12px;
 }
 
 #desc {
@@ -93,3 +94,21 @@ h1 {
     height: 30px;
 }
 
+.breadcrumbs {
+    background-color: #3C585B;
+    border-color: #FFFFFF;
+    border-radius: 9px;
+    font-family: Chalk,arial;
+}
+.breadcrumbs > *{
+    color: #fbed50;
+    font-family: Chalk, arial;
+}
+
+.breadcrumbs > *:before {
+    color: #ffffff;
+}
+
+.breadcrumbs > .unavailable {
+    color: #ffffff;
+}
