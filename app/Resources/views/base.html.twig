@@ -3,11 +3,71 @@
     <head>
         <meta charset="UTF-8" />
         <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
+        {% block stylesheets %}
+            <link href="{{ asset('bundles/acmestart/css/foundation.css') }}" type="text/css" rel="stylesheet" />
+            <link href="{{ asset('bundles/acmestart/css/main.css') }}" type="text/css" rel="stylesheet" />
+        {% endblock %}
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
     </head>
     <body>
-        {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
+    <div id="header">
+        {% block top_menu %}
+        <div class="top_menu">
+            <ul>
+                <li>
+                    News
+                </li>
+                <li>
+                    Rules
+                </li>
+                <li>
+                    Lessons
+                </li>
+            </ul>
+        </div>
+        {% endblock %}
+        {% block header %}
+
+        <div class="row">
+            <div class="small-12 small-centered columns">
+                <div class="top_content">
+                    <img>
+                    <div id="frendly">
+                        <div class="URL"></div>
+                        <div class="URL"></div>
+                        <div class="URL"></div>
+                        <div class="URL"></div>
+                        <div class="URL"></div>
+                        <div class="URL"></div>
+                        <div class="URL"></div>
+                        <div class="URL"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        {% endblock %}
+
+    </div>
+    <div class="row">
+        <div id="content" class="small-12 small-centered columns">
+            {% block body %}{% endblock %}
+            {% block footer %}
+                <div id="desc">
+
+                    <div id="mel">
+
+                    </div>
+                </div>
+            {% endblock %}
+        </div>
+    </div>
+
+
+        {% block javascripts %}
+        <script src="{{ asset('bundles/sonatajquery/jquery-1.10.2.js') }}" type="text/javascript"></script>
+            <script src="{{ asset('bundles/acmestart/js/foundation.min.js') }}" type="text/javascript"></script>
+            <script src="{{ asset('bundles/acmestart/js/main.js') }}" type="text/javascript"></script>
+        {% endblock %}
     </body>
 </html>

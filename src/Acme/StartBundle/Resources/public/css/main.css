@@ -1,0 +1,67 @@
+@font-face {
+    font-family: Chalk;
+    src: local("Chalk"),
+         url(../ttf/Chalk.ttf);
+}
+
+#content {
+    background: #3c585b;
+    border-top: 3px solid rgb(170, 170, 170);
+    border-right: 5px solid rgb(170, 170, 170);
+    border-bottom: 3px none rgb(34, 34, 34);
+    border-left: 5px solid rgb(170, 170, 170);
+    border-radius: 5px 5px 0 0;
+    min-height: 200px;
+}
+
+h1 {
+    font-family: Chalk, arial;
+    color: white;
+}
+
+.top_menu {
+    font-family: Chalk, arial;
+    background: black;
+    color: white;
+    height: 35px;
+    position: fixed;
+    width: 100%;
+    padding: 2px 20px;
+    text-align: center;
+    z-index: 99;
+}
+
+.top_menu li {
+    list-style-type: none;
+    display: inline;
+    margin: 0 12px;
+    font-size: 20px;
+    text-shadow: 1px 2px #666;
+}
+
+.top_menu li:hover {
+
+    text-shadow: 1px 2px #6bb;
+}
+
+.top_content {
+    height: 150px;
+    border: 2px solid;
+    margin: 33px 0 10px;
+}
+
+#desc {
+    background: url("../img/desc.png") repeat-x scroll 0 0 transparent;
+    bottom: -36px;
+    height: 36px;
+    margin: 0 -25px;
+    position: absolute;
+    width: 102%
+}
+
+#mel {
+    background: url("../img/mel.png") no-repeat;
+    margin: -23px 10% 0;
+    height: 30px;
+}
+
