@@ -1,26 +1,28 @@
 {% extends '::base.html.twig' %}
 
 {% block body %}
-<div id="body" class="content small-12 small-centered large-9 columns">
-    <div class="orbit-container">
-        <ul data-orbit data-options="animation_speed:1500;">
-            <li data-orbit-slide="headline-1">
-                <div><h2>Headline 1</h2>
+<div id="body" class="content span8">
 
-                    <h3>Subheadline</h3></div>
-            </li>
-            <li data-orbit-slide="headline-2">
-                <div><h2>Headline 2</h2>
+    <!-- carusel -->
 
-                    <h3>Subheadline</h3></div>
-            </li>
-            <li data-orbit-slide="headline-3">
-                <div><h2>Headline 3</h2>
-
-                    <h3>Subheadline</h3></div>
-            </li>
-        </ul>
+    <div id="myCarousel" class="carousel slide">
+        <!-- Carousel items -->
+        <div class="carousel-inner">
+            <div class="active item"><h1>Hello!</h1></div>
+            <div class="item"><h1>Lets study!</h1></div>
+            <div class="item"><h1>Student!</h1></div>
+        </div>
+        <!-- Carousel nav -->
+        <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+        <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+        <script type="text/javascript">
+            $('.carousel').carousel({
+                interval: 2000
+            })
+        </script>
     </div>
+
+    <!-- end carusel -->
 
     <h1>Hello! Lets study!</h1>
 </div>

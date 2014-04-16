@@ -3,26 +3,39 @@
     <head>
         <meta charset="UTF-8" />
         <title>{% block title %}Welcome!{% endblock %}</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         {% block stylesheets %}
-            <link href="{{ asset('bundles/acmestart/css/foundation.css') }}" type="text/css" rel="stylesheet" />
+            <link href="{{ asset('bundles/acmestart/css/bootstrap.css') }}" rel="stylesheet" media="screen">
+
+            <link href="{{ asset('bundles/acmestart/css/bootstrap-responsive.css') }}" type="text/css" rel="stylesheet" />
             <link href="{{ asset('bundles/acmestart/css/main.css') }}" type="text/css" rel="stylesheet" />
         {% endblock %}
 
-            <script src="{{ asset('bundles/sonatajquery/jquery-1.10.2.js') }}" type="text/javascript"></script>
-            <script src="{{ asset('bundles/acmestart/js/foundation/foundation.js') }}" type="text/javascript"></script>
-            <script type="text/javascript" src="{{ asset('bundles/acmestart/js/foundation/foundation.orbit.js')}}"></script>
-            <script src="{{ asset('bundles/acmestart/js/main.js') }}" type="text/javascript"></script>
         {% block javascripts %}
+
+            <script src="{{ asset('bundles/sonatajquery/jquery-1.10.2.js') }}" type="text/javascript"></script>
+            <script src="{{ asset('bundles/acmestart/js/bootstrap.js') }}"></script>
+            <script src="{{ asset('bundles/acmestart/js/main.js') }}" type="text/javascript"></script>
+
         {% endblock %}
+
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
     </head>
     <body>
+
+        <!-- header -->
+
         <div id="header">
+
+            <!-- top_menu -->
             {% block top_menu %}
             <div class="top_menu">
-                <div data-description="knowledge - force" data-title="knowledge" class="pluso show-for-large-up" data-background="transparent"
+                <div data-description="knowledge - force" data-title="knowledge" class="pluso visible-desktop" data-background="transparent"
                      data-options="small,round,line,horizontal,counter,theme=03"
-                     data-services="facebook,twitter,linkedin,vkontakte,odnoklassniki,google,email,print,yahoo,myspace,moikrug"></div>
+                     data-services="facebook,twitter,linkedin,vkontakte,odnoklassniki,google,email,print,yahoo,myspace,moikrug">
+
+                </div>
+
                 <ul>
                     <li>
                         News
@@ -34,71 +47,96 @@
                         Lessons
                     </li>
                 </ul>
+
             </div>
-                <div class="pano">
+            <div class="pano">
 
-                </div>
+            </div>
+
             {% endblock %}
-            {% block header %}
 
-            <div class="row">
-                <div class="small-12 small-centered columns">
-                    <div class="top_content">
-                        <h2>learn and develop - a fundamental human trait which distinguishes it from other living beings.</h2>
-                        <nav class="breadcrumbs">
-                            <a href="#">Home</a>
-                            <a href="#">Features</a>
-                            <a class="unavailable" href="#">Gene Splicing</a>
-                            <a class="current" href="#">Cloning</a>
-                        </nav>
+            <!-- end top_menu -->
+
+            <!-- header_block_link -->
+
+            <div class="container">
+
+                {% block header %}
+
+                <div class="row">
+                    <div class="span12">
+                        <div class="top_content">
+                            <h2>learn and develop - a fundamental human trait which distinguishes it from other living beings.</h2>
+                            <nav class="breadcrumbs">
+                                <a href="#">Home</a>
+                                <a href="#">Features</a>
+                                <a class="unavailable" href="#">Gene Splicing</a>
+                                <a class="current" href="#">Cloning</a>
+                            </nav>
+                        </div>
                     </div>
                 </div>
+
+                {% endblock %}
+
             </div>
 
-            {% endblock %}
+            <!-- end header_block_link -->
 
         </div>
-        <div class="row">
-            <div id="content" class="small-12 large-12 columns">
-                <div class="row">
 
-                    {% block left_menu %}
-                        <div id="left_menu" class="content small-11 small-centered large-uncentered large-3 columns">
+       <!-- end header -->
 
-                            <h1>
-                                Menu
-                            </h1>
-                            <ul>
-                                <li>Home</li>
-                                <li>News</li>
-                                <li>Rules</li>
-                                <li>Katalog lessons</li>
-                                <li>Users</li>
-                                <li>Teachers</li>
-                                <li>Online</li>
-                                <li>Bla Bla</li>
-                                <li>Kva kva</li>
-                            </ul>
-                        </div>
-                    {% endblock %}
+        <div class="container">
 
-                    {% block body %}
-                        <div id="body" class="content small-12 large-9 columns">
+            <!-- content -->
 
-                        </div>
-                    {% endblock %}
+            <div class="row">
 
-                </div>
+                {% block left_menu %}
+
+                    <div id="left_menu" class="content span4">
+
+                        <h1>
+                            Menu
+                        </h1>
+
+                        <ul>
+                            <li>Home</li>
+                            <li>News</li>
+                            <li>Rules</li>
+                            <li>Katalog lessons</li>
+                            <li>Users</li>
+                            <li>Teachers</li>
+                            <li>Online</li>
+                            <li>Bla Bla</li>
+                            <li>Kva kva</li>
+                        </ul>
+
+                    </div>
+
+                {% endblock %}
+
+                {% block body %}
+
+                    <div id="body" class="content span8">
+
+                    </div>
+
+                {% endblock %}
+
                 {% block footer %}
+
                     <div id="desc">
 
                         <div id="mel">
 
                         </div>
                     </div>
+
                 {% endblock %}
 
-                <div data-description="knowledge - force" data-title="knowledge" class="pluso show-for-medium-only" data-background="transparent"
+                <div data-description="knowledge - force" data-title="knowledge" class="pluso hidden-desktop" data-background="transparent"
                      data-options="small,round,line,horizontal,counter,theme=03"
                      data-services="facebook,twitter,linkedin,vkontakte,odnoklassniki,google,email,print,yahoo,myspace,moikrug">
 

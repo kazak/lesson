@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "373813c9dbd157c61567356ab9466231",
+    "hash": "8d5c686ccb56c68eff292cec881f9a06",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -1884,12 +1884,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sonata-project/SonataAdminBundle.git",
-                "reference": "020e4ff2ba694e15f8970a9878bd507e15044a06"
+                "reference": "134ab7e684505cb567f8d7111e25dc9f9aede039"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sonata-project/SonataAdminBundle/zipball/020e4ff2ba694e15f8970a9878bd507e15044a06",
-                "reference": "020e4ff2ba694e15f8970a9878bd507e15044a06",
+                "url": "https://api.github.com/repos/sonata-project/SonataAdminBundle/zipball/134ab7e684505cb567f8d7111e25dc9f9aede039",
+                "reference": "134ab7e684505cb567f8d7111e25dc9f9aede039",
                 "shasum": ""
             },
             "require": {
@@ -1955,7 +1955,7 @@
                 "bootstrap",
                 "sonata"
             ],
-            "time": "2014-04-14 16:35:43"
+            "time": "2014-04-15 08:22:13"
         },
         {
             "name": "sonata-project/block-bundle",
@@ -2195,12 +2195,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sonata-project/SonataDoctrineORMAdminBundle.git",
-                "reference": "6d17594dff7d4379da0c369a2923442b1363b0ef"
+                "reference": "9dc2d441417db1858457c359af93cc8d7499332a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sonata-project/SonataDoctrineORMAdminBundle/zipball/6d17594dff7d4379da0c369a2923442b1363b0ef",
-                "reference": "6d17594dff7d4379da0c369a2923442b1363b0ef",
+                "url": "https://api.github.com/repos/sonata-project/SonataDoctrineORMAdminBundle/zipball/9dc2d441417db1858457c359af93cc8d7499332a",
+                "reference": "9dc2d441417db1858457c359af93cc8d7499332a",
                 "shasum": ""
             },
             "require": {
@@ -2255,7 +2255,7 @@
                 "generator",
                 "sonata"
             ],
-            "time": "2014-04-14 16:20:20"
+            "time": "2014-04-15 14:33:56"
         },
         {
             "name": "sonata-project/easy-extends-bundle",
@@ -2263,12 +2263,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sonata-project/SonataEasyExtendsBundle.git",
-                "reference": "44aed5aaa4e563a9cad2d1dad000fcbfd0a29efc"
+                "reference": "05d4cdfabe1815b7d8cc9483ebf0ea7707bb48c9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sonata-project/SonataEasyExtendsBundle/zipball/44aed5aaa4e563a9cad2d1dad000fcbfd0a29efc",
-                "reference": "44aed5aaa4e563a9cad2d1dad000fcbfd0a29efc",
+                "url": "https://api.github.com/repos/sonata-project/SonataEasyExtendsBundle/zipball/05d4cdfabe1815b7d8cc9483ebf0ea7707bb48c9",
+                "reference": "05d4cdfabe1815b7d8cc9483ebf0ea7707bb48c9",
                 "shasum": ""
             },
             "require": {
@@ -2312,7 +2312,7 @@
                 "Easy Extends",
                 "sonata"
             ],
-            "time": "2014-03-24 16:15:13"
+            "time": "2014-04-16 10:32:54"
         },
         {
             "name": "sonata-project/exporter",

@@ -4,10 +4,39 @@
          url(../ttf/Chalk.ttf);
 }
 
+/* Landscape - телефоны */
+@media (max-width: 480px) { }
+
+/* От ландшафтного экрана телефона до потретного планшета */
+@media (max-width: 767px) { }
+
+/* От портретного планшета до ландшафтного экрана и настольных дисплеев */
+@media (min-width: 768px) and (max-width: 979px) {  }
+
+/* Большой дисплей */
+@media (min-width: 1200px) { }
+
+
+/* исправление стилей бутстрапа */
+.container {
+    z-index: 10;
+    position: relative;
+}
+
+[class*="span"] {
+    margin-left: 10px;
+}
+
+
+/**
+* окончание исправлений стилей бутстрапа
+* собственные стили
+**/
+
 .pano {
     background-color: #000000;
     box-shadow: 0 2px 16px black;
-    height: 100px;
+    height: 130px;
     position: absolute;
     width: 100%;
     z-index: 0;
@@ -25,7 +54,7 @@
     height: 100%;
     min-height: 200px;
     text-align: center;
-    margin: 5px 0;
+    margin-top: 5px;
 }
 
 h1 {
@@ -103,9 +132,8 @@ h1 {
     bottom: -33px;
     box-shadow: 3px 6px 15px black;
     height: 33px;
-    margin: 0 -21px;
     position: absolute;
-    width: 101%;
+    width: 102%;
 }
 
 #mel {
