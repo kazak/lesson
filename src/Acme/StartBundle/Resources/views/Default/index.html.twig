@@ -1,8 +1,28 @@
 {% extends '::base.html.twig' %}
 
 {% block body %}
+<div id="body" class="content small-12 small-centered large-9 columns">
+    <div class="orbit-container">
+        <ul data-orbit data-options="animation_speed:1500;">
+            <li data-orbit-slide="headline-1">
+                <div><h2>Headline 1</h2>
 
-<h1>Hello! Lets study!</h1>
+                    <h3>Subheadline</h3></div>
+            </li>
+            <li data-orbit-slide="headline-2">
+                <div><h2>Headline 2</h2>
 
+                    <h3>Subheadline</h3></div>
+            </li>
+            <li data-orbit-slide="headline-3">
+                <div><h2>Headline 3</h2>
+
+                    <h3>Subheadline</h3></div>
+            </li>
+        </ul>
+    </div>
+
+    <h1>Hello! Lets study!</h1>
+</div>
 {% endblock %}
 
