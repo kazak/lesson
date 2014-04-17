@@ -1,3 +1,7 @@
+acme_news:
+    resource: "@AcmeNewsBundle/Resources/config/routing.yml"
+    prefix:   /
+
 acme_start:
     resource: "@AcmeStartBundle/Resources/config/routing.yml"
     prefix:   /

@@ -1,0 +1,3 @@
+acme_news_homepage:
+    pattern:  /news
+    defaults: { _controller: AcmeNewsBundle:News:index }

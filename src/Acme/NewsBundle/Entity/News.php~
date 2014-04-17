@@ -1,0 +1,52 @@
+<?php
+
+namespace Acme\NewsBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Acme\NewsBundle\Entity\News
+ *
+ * @ORM\Table(name="news")
+ * @ORM\Entity
+ */
+class News
+{
+    /**
+     * @var integer $id
+     *
+     * @ORM\Column(name="id", type="integer", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $id;
+
+    /**
+     * @var string $title
+     *
+     * @ORM\Column(name="title", type="string", length=255, nullable=true)
+     */
+    private $title;
+
+    /**
+     * @var text $announce
+     *
+     * @ORM\Column(name="announce", type="text", nullable=true)
+     */
+    private $announce;
+
+    /**
+     * @var text $text
+     *
+     * @ORM\Column(name="text", type="text", nullable=true)
+     */
+    private $text;
+
+    /**
+     * @var date $pubDate
+     *
+     * @ORM\Column(name="pub_date", type="date", nullable=true)
+     */
+    private $pubDate;
+
+}

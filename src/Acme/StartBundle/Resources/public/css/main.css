@@ -94,11 +94,11 @@ h1 {
 }
 
 #left_menu li {
-    background: url("../img/checked.png") no-repeat scroll left 3px / 39px 54px transparent;
+    background: url("../img/checked.png") no-repeat scroll left 3px / 55px 79px transparent;
     border-bottom: 1px solid;
     height: 38px;
     overflow: hidden;
-    padding: 0 0 0 38px;
+    padding: 11px 0 0 38px;
 
 }
 

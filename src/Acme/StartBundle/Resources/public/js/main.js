@@ -1,21 +1,8 @@
 $(function() {
 
-    $("#featured").on("ready.fndtn.orbit", function(event) {
-        console.info("ready");
-    });
-    $("#featured").on("before-slide-change.fndtn.orbit", function(event) {
-        console.info("before slide change");
-    });
-    $("#featured").on("after-slide-change.fndtn.orbit", function(event, orbit) {
-        console.info("after slide change");
-        console.info("slide " + orbit.slide_number + " of " + orbit.total_slides);
-    });
-    $("#featured").on("timer-started.fndtn.orbit", function(event, orbit) {
-        console.info("timer started");
-    });
-    $("#featured").on("timer-stopped.fndtn.orbit", function(event, orbit) {
-        console.info("timer stopped");
-    });
+    $('#menu li').on('click', function(){
+        getContent($(this).attr('value'));
+    })
 
     if (window.pluso)if (typeof window.pluso.start == "function") return;
     if (window.ifpluso==undefined) { window.ifpluso = 1;
@@ -25,3 +12,19 @@ $(function() {
         var h=d[g]('body')[0];
         h.appendChild(s);
     }});
+
+function getContent(url, conteiner){
+   if (typeof(conteiner) == "undefined"){
+       conteiner = "#body";
+   }
+    $.ajax({
+        url: url,
+        dataType: "html",
+        success: function (data, textStatus) { // вешаем свой обработчик на функцию success
+            $.each(data, function(i, val) {    // обрабатываем полученные данные
+                /* ... */
+            });
+        }
+    });
+
+}

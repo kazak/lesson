@@ -64,8 +64,8 @@ CREATE TABLE `acl_entries` (
   KEY `IDX_46C8B806EA000B10` (`class_id`),
   KEY `IDX_46C8B8063D9AB4A6` (`object_identity_id`),
   KEY `IDX_46C8B806DF9183C9` (`security_identity_id`),
-  CONSTRAINT `FK_46C8B806DF9183C9` FOREIGN KEY (`security_identity_id`) REFERENCES `acl_security_identities` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
   CONSTRAINT `FK_46C8B8063D9AB4A6` FOREIGN KEY (`object_identity_id`) REFERENCES `acl_object_identities` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
+  CONSTRAINT `FK_46C8B806DF9183C9` FOREIGN KEY (`security_identity_id`) REFERENCES `acl_security_identities` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
   CONSTRAINT `FK_46C8B806EA000B10` FOREIGN KEY (`class_id`) REFERENCES `acl_classes` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -121,8 +121,8 @@ CREATE TABLE `acl_object_identity_ancestors` (
   PRIMARY KEY (`object_identity_id`,`ancestor_id`),
   KEY `IDX_825DE2993D9AB4A6` (`object_identity_id`),
   KEY `IDX_825DE299C671CEA1` (`ancestor_id`),
-  CONSTRAINT `FK_825DE299C671CEA1` FOREIGN KEY (`ancestor_id`) REFERENCES `acl_object_identities` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
-  CONSTRAINT `FK_825DE2993D9AB4A6` FOREIGN KEY (`object_identity_id`) REFERENCES `acl_object_identities` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
+  CONSTRAINT `FK_825DE2993D9AB4A6` FOREIGN KEY (`object_identity_id`) REFERENCES `acl_object_identities` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
+  CONSTRAINT `FK_825DE299C671CEA1` FOREIGN KEY (`ancestor_id`) REFERENCES `acl_object_identities` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -267,7 +267,7 @@ CREATE TABLE `fos_user_user` (
 
 LOCK TABLES `fos_user_user` WRITE;
 /*!40000 ALTER TABLE `fos_user_user` DISABLE KEYS */;
-INSERT INTO `fos_user_user` VALUES (1,'admin','admin','dimon86@ukr.net','dimon86@ukr.net',1,'a0ujrq08i5ck8g8w4w8gsowogsk0kwc','TAKN5jCij5l8fqUdIbHiW3Iu5mRpJULuZPEezX8v0XFhaNhnEpHUh+av5bz0AhaqsLYhyrYyKuIkzm7FoK+VVg==','2014-04-11 15:49:50',0,0,NULL,NULL,NULL,'a:1:{i:0;s:16:\"ROLE_SUPER_ADMIN\";}',0,NULL,'2014-04-11 16:48:54','2014-04-11 16:11:38',NULL,NULL,NULL,NULL,NULL,'u',NULL,NULL,NULL,NULL,NULL,'null',NULL,NULL,'null',NULL,NULL,'null',NULL,NULL),(2,'kazak','kazak','dss@nxc.no','dss@nxc.no',1,'nsnsb8idbpc0o4cccg4s0gw4g84cokk','O62Gy9KdFP/VNqZPUiEEnbfpkjGdVOZwsIrrXi0xu4BC+6Fm0mBX9+22lmaNrGzufXGgTN7my9INJXxzgFZJBQ==',NULL,0,0,NULL,NULL,NULL,'a:6:{i:0;s:10:\"ROLE_ADMIN\";i:1;s:17:\"ROLE_SONATA_ADMIN\";i:2;s:16:\"ROLE_SUPER_ADMIN\";i:3;s:22:\"ROLE_ALLOWED_TO_SWITCH\";i:4;s:6:\"SONATA\";i:5;s:32:\"ROLE_SONATA_PAGE_ADMIN_PAGE_EDIT\";}',0,NULL,'2014-04-11 16:08:55','2014-04-11 16:12:03','1986-09-04 00:00:00','dima','solo',NULL,NULL,'m','uk_UA','Europe/Kiev',NULL,NULL,NULL,'null',NULL,NULL,'null',NULL,NULL,'null',NULL,NULL),(3,'test','test','test@test.test','test@test.test',1,'5dazuc13yt8g8oco80k80008808084c','9gTHWmi/cie11C5jGqgan/UmYnS5j4qduFVKT075Wzh00hXmRT8ZHljdVMmn5O465l1m2q1znCnYljsQUz7aHQ==',NULL,0,0,NULL,NULL,NULL,'a:0:{}',0,NULL,'2014-04-11 16:09:59','2014-04-11 16:09:59',NULL,NULL,NULL,NULL,NULL,'u',NULL,NULL,NULL,NULL,NULL,'null',NULL,NULL,'null',NULL,NULL,'null',NULL,NULL);
+INSERT INTO `fos_user_user` VALUES (1,'admin','admin','dimon86@ukr.net','dimon86@ukr.net',1,'a0ujrq08i5ck8g8w4w8gsowogsk0kwc','TAKN5jCij5l8fqUdIbHiW3Iu5mRpJULuZPEezX8v0XFhaNhnEpHUh+av5bz0AhaqsLYhyrYyKuIkzm7FoK+VVg==','2014-04-17 13:29:39',0,0,NULL,NULL,NULL,'a:1:{i:0;s:16:\"ROLE_SUPER_ADMIN\";}',0,NULL,'2014-04-11 16:48:54','2014-04-17 13:29:39',NULL,NULL,NULL,NULL,NULL,'u',NULL,NULL,NULL,NULL,NULL,'null',NULL,NULL,'null',NULL,NULL,'null',NULL,NULL),(2,'kazak','kazak','dss@nxc.no','dss@nxc.no',1,'nsnsb8idbpc0o4cccg4s0gw4g84cokk','O62Gy9KdFP/VNqZPUiEEnbfpkjGdVOZwsIrrXi0xu4BC+6Fm0mBX9+22lmaNrGzufXGgTN7my9INJXxzgFZJBQ==',NULL,0,0,NULL,NULL,NULL,'a:6:{i:0;s:10:\"ROLE_ADMIN\";i:1;s:17:\"ROLE_SONATA_ADMIN\";i:2;s:16:\"ROLE_SUPER_ADMIN\";i:3;s:22:\"ROLE_ALLOWED_TO_SWITCH\";i:4;s:6:\"SONATA\";i:5;s:32:\"ROLE_SONATA_PAGE_ADMIN_PAGE_EDIT\";}',0,NULL,'2014-04-11 16:08:55','2014-04-11 16:12:03','1986-09-04 00:00:00','dima','solo',NULL,NULL,'m','uk_UA','Europe/Kiev',NULL,NULL,NULL,'null',NULL,NULL,'null',NULL,NULL,'null',NULL,NULL),(3,'test','test','test@test.test','test@test.test',1,'5dazuc13yt8g8oco80k80008808084c','9gTHWmi/cie11C5jGqgan/UmYnS5j4qduFVKT075Wzh00hXmRT8ZHljdVMmn5O465l1m2q1znCnYljsQUz7aHQ==','2014-04-11 16:34:52',0,0,NULL,NULL,NULL,'a:0:{}',0,NULL,'2014-04-11 16:09:59','2014-04-11 16:34:52',NULL,NULL,NULL,NULL,NULL,'u',NULL,NULL,NULL,NULL,NULL,'null',NULL,NULL,'null',NULL,NULL,'null',NULL,NULL);
 /*!40000 ALTER TABLE `fos_user_user` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -284,8 +284,8 @@ CREATE TABLE `fos_user_user_group` (
   PRIMARY KEY (`user_id`,`group_id`),
   KEY `IDX_B3C77447A76ED395` (`user_id`),
   KEY `IDX_B3C77447FE54D947` (`group_id`),
-  CONSTRAINT `FK_B3C77447FE54D947` FOREIGN KEY (`group_id`) REFERENCES `fos_user_group` (`id`) ON DELETE CASCADE,
-  CONSTRAINT `FK_B3C77447A76ED395` FOREIGN KEY (`user_id`) REFERENCES `fos_user_user` (`id`) ON DELETE CASCADE
+  CONSTRAINT `FK_B3C77447A76ED395` FOREIGN KEY (`user_id`) REFERENCES `fos_user_user` (`id`) ON DELETE CASCADE,
+  CONSTRAINT `FK_B3C77447FE54D947` FOREIGN KEY (`group_id`) REFERENCES `fos_user_group` (`id`) ON DELETE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -298,6 +298,32 @@ LOCK TABLES `fos_user_user_group` WRITE;
 INSERT INTO `fos_user_user_group` VALUES (1,2),(2,2);
 /*!40000 ALTER TABLE `fos_user_user_group` ENABLE KEYS */;
 UNLOCK TABLES;
+
+--
+-- Table structure for table `news`
+--
+
+DROP TABLE IF EXISTS `news`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `news` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `title` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `announce` longtext COLLATE utf8_unicode_ci,
+  `text` longtext COLLATE utf8_unicode_ci,
+  `pub_date` date DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `news`
+--
+
+LOCK TABLES `news` WRITE;
+/*!40000 ALTER TABLE `news` DISABLE KEYS */;
+/*!40000 ALTER TABLE `news` ENABLE KEYS */;
+UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -308,4 +334,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2014-04-11 17:12:49
+-- Dump completed on 2014-04-17 18:12:23
