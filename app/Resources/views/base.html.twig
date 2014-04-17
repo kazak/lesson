@@ -102,19 +102,19 @@
                         <h1>
                             Menu
                         </h1>
-
-                        <ul id="menu">
-                            <li value="/">Home</li>
-                            <li value="{{ path('acme_news_homepage') }}">News</li>
-                            <li value="/">Rules</li>
-                            <li value="/">Katalog lessons</li>
-                            <li value="/">Users</li>
-                            <li value="/">Teachers</li>
-                            <li value="/">Online</li>
-                            <li value="/">Bla Bla</li>
-                            <li value="/">Kva kva</li>
-                        </ul>
-
+                        <b>
+                            <ul id="menu">
+                                <li class="selected" value="/">Home</li>
+                                <li value="{{ path('acme_news_homepage') }}">News</li>
+                                <li value="/">Rules</li>
+                                <li value="/">Katalog lessons</li>
+                                <li value="/">Users</li>
+                                <li value="/">Teachers</li>
+                                <li value="/">Online</li>
+                                <li value="/">Bla Bla</li>
+                                <li value="/">Kva kva</li>
+                            </ul>
+                        </b>
                     </div>
 
                 {% endblock %}

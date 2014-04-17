@@ -2780,12 +2780,12 @@
         "source": {
             "type": "git",
             "url": "https://github.com/sonata-project/SonataAdminBundle.git",
-            "reference": "134ab7e684505cb567f8d7111e25dc9f9aede039"
+            "reference": "7d1aebb93efc65ccb53cdb750dcb8122593fac2c"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/sonata-project/SonataAdminBundle/zipball/134ab7e684505cb567f8d7111e25dc9f9aede039",
-            "reference": "134ab7e684505cb567f8d7111e25dc9f9aede039",
+            "url": "https://api.github.com/repos/sonata-project/SonataAdminBundle/zipball/7d1aebb93efc65ccb53cdb750dcb8122593fac2c",
+            "reference": "7d1aebb93efc65ccb53cdb750dcb8122593fac2c",
             "shasum": ""
         },
         "require": {
@@ -2817,7 +2817,7 @@
             "jms/translation-bundle": "Extract message keys from Admins",
             "sonata-project/intl-bundle": "Add localized date and number into the list"
         },
-        "time": "2014-04-15 08:22:13",
+        "time": "2014-04-17 12:05:47",
         "type": "symfony-bundle",
         "extra": {
             "branch-alias": {
@@ -3221,12 +3221,12 @@
         "source": {
             "type": "git",
             "url": "https://github.com/sonata-project/SonataDoctrineORMAdminBundle.git",
-            "reference": "9dc2d441417db1858457c359af93cc8d7499332a"
+            "reference": "9e03b1b1d65ef42aca2f52c0e99eb4c2aae10ddd"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/sonata-project/SonataDoctrineORMAdminBundle/zipball/9dc2d441417db1858457c359af93cc8d7499332a",
-            "reference": "9dc2d441417db1858457c359af93cc8d7499332a",
+            "url": "https://api.github.com/repos/sonata-project/SonataDoctrineORMAdminBundle/zipball/9e03b1b1d65ef42aca2f52c0e99eb4c2aae10ddd",
+            "reference": "9e03b1b1d65ef42aca2f52c0e99eb4c2aae10ddd",
             "shasum": ""
         },
         "require": {
@@ -3246,7 +3246,7 @@
         "suggest": {
             "simplethings/entity-audit-bundle": "If you want to support for versioning of entities and their associations."
         },
-        "time": "2014-04-15 14:33:56",
+        "time": "2014-04-17 00:10:12",
         "type": "symfony-bundle",
         "extra": {
             "branch-alias": {
