@@ -4,9 +4,9 @@
          url(../ttf/Chalk.ttf);
 }
 @font-face {
-    font-family: Carton;
-    src: local("Carton"),
-        url(../ttf/From_Cartoon_Blocks.ttf);
+    font-family: KGSecondChancesSketch;
+    src: local("KGSecondChancesSketch"),
+        url(../ttf/KGSecondChancesSketch.ttf);
 }
 @font-face {
     font-family: Grunge;
@@ -68,7 +68,7 @@
 }
 
 h1 {
-    font-family: Grunge, arial;
+    font-family: KGSecondChancesSketch, arial;
     color: white;
 }
 

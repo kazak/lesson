@@ -17,6 +17,10 @@ $(function() {
 
 function getContent(url){
 
+    if(url == "/"){
+        document.location.href = url;
+        return;
+    }
     $.ajax({
         url: url,
         dataType: "html",
